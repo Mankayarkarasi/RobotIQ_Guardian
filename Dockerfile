@@ -13,6 +13,10 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 COPY backend/requirements.txt /app/backend/requirements.txt
 COPY backend/adk-requirements.txt /app/backend/adk-requirements.txt
 
+RUN python -m pip install --no-cache-dir --upgrade pip \
+    && python -m pip install --no-cache-dir \
+       -r /app/backend/requirements.txt
+
 RUN pip install --no-cache-dir \
     -r /app/backend/requirements.txt
 

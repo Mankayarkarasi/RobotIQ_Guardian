@@ -2,27 +2,3 @@
 # Install into an isolated Python virtual environment.
 # Choose a Python/google-adk combination supported by the package resolver.
 google-adk>=2.11,<3
-
-# FastAPI server
-fastapi
-uvicorn[standard]
-
-# Google ADK orchestration
--r adk-requirements.txt
-
-# Gemini API integration
-google-genai
-
-# Environment configuration
-python-dotenv
-
-# HTTP requests
-httpx
-
-# Data processing
-numpy
-pandas
-
-# Video processing
-opencv-python-headless
-Pillow
