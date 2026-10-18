@@ -1,0 +1,13 @@
+{
+  "joint_3_vibration": 0.30,
+  "motor_current": 0.15,
+  "temperature": 0.15,
+  "unstable_motion": 0.30,
+  "task_failure": 0.10,
+
+  "cycle_time": 0.10,
+  "conveyor_motion_abnormal": 0.40,
+
+  "position_error": 0.30,
+  "placement_deviation": 0.40
+}

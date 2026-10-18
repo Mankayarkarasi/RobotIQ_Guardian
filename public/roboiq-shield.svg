@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Dark Background -->
+    <radialGradient id="bgGrad" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#071324" />
+      <stop offset="70%" stop-color="#020612" />
+      <stop offset="100%" stop-color="#010308" />
+    </radialGradient>
+
+    <!-- Neon Blue Shield Glow -->
+    <linearGradient id="shieldBorder" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <!-- Robot Dome Gradient -->
+    <linearGradient id="robotHeadGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="60%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <linearGradient id="muffGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="eyeGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Deep Canvas -->
+  <rect width="512" height="512" rx="72" fill="url(#bgGrad)" />
+
+  <!-- Outer Ambient Neon Glow Shield -->
+  <path d="M 256 56 C 352 76, 424 96, 428 124 L 428 252 C 428 344, 352 418, 256 454 C 160 418, 84 344, 84 252 L 84 124 C 88 96, 160 76, 256 56 Z"
+        fill="#040b17"
+        stroke="url(#shieldBorder)"
+        stroke-width="20"
+        stroke-linejoin="round"
+        filter="url(#neonGlow)" />
+
+  <!-- Inner Crisp Shield Rim -->
+  <path d="M 256 56 C 352 76, 424 96, 428 124 L 428 252 C 428 344, 352 418, 256 454 C 160 418, 84 344, 84 252 L 84 124 C 88 96, 160 76, 256 56 Z"
+        fill="none"
+        stroke="#bae6fd"
+        stroke-width="3"
+        stroke-opacity="0.5" />
+
+  <!-- Surrounding Pulse Ticks / Pills -->
+  <!-- Top -->
+  <rect x="248" y="118" width="16" height="28" rx="8" fill="#38bdf8" />
+  <!-- Bottom -->
+  <rect x="248" y="342" width="16" height="28" rx="8" fill="#0284c7" />
+  <!-- Top-Left (-45 deg) -->
+  <g transform="translate(164, 168) rotate(-45)">
+    <rect x="-8" y="-15" width="16" height="30" rx="8" fill="#38bdf8" />
+  </g>
+  <!-- Top-Right (45 deg) -->
+  <g transform="translate(348, 168) rotate(45)">
+    <rect x="-8" y="-15" width="16" height="30" rx="8" fill="#38bdf8" />
+  </g>
+  <!-- Lower Right Status Tick -->
+  <rect x="332" y="296" width="12" height="24" rx="6" fill="#38bdf8" />
+
+  <!-- Robot Ear Muffs -->
+  <!-- Left Ear Muff -->
+  <rect x="154" y="222" width="24" height="52" rx="12" fill="url(#muffGrad)" />
+  <!-- Right Ear Muff -->
+  <rect x="334" y="222" width="24" height="52" rx="12" fill="url(#muffGrad)" />
+
+  <!-- Robot Head & Collar Base -->
+  <path d="M 174 224
+           C 174 165, 338 165, 338 224
+           C 338 255, 325 270, 315 282
+           C 325 304, 328 324, 324 332
+           C 296 338, 216 338, 188 332
+           C 184 324, 187 304, 197 282
+           C 187 270, 174 255, 174 224 Z"
+        fill="url(#robotHeadGrad)" />
+
+  <!-- Inner Dark Mask / Visor -->
+  <rect x="188" y="198" width="136" height="78" rx="28" fill="#030712" stroke="#0284c7" stroke-width="4" />
+
+  <!-- Glowing Cyan Eyes -->
+  <!-- Left Eye -->
+  <path d="M 214 225 C 222 225, 230 230, 230 244 C 222 247, 214 241, 214 225 Z" fill="#22d3ee" filter="url(#eyeGlow)" />
+  <!-- Right Eye -->
+  <path d="M 298 225 C 290 225, 282 230, 282 244 C 290 247, 298 241, 298 225 Z" fill="#22d3ee" filter="url(#eyeGlow)" />
+</svg>

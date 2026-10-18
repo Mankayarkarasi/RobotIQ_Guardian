@@ -1,0 +1,17 @@
+{
+  "status": "RECOVERY_PROPOSED",
+  "recommended_actions": [
+    "Pause production cell",
+    "Move robot to safe inspection position",
+    "Inspect Joint-3 for mechanical wear or backlash",
+    "Perform simulated Joint-3 component replacement",
+    "Perform robot calibration",
+    "Run no-load Joint-3 validation test",
+    "Run validation cycle"
+  ],
+  "reasoning_summary": "The robot experienced a pick-and-place failure due to Joint-3 mechanical degradation, supported by telemetry showing high vibration, position error, motor current, and temperature. The proposed recovery sequence safely pauses the production cell, moves the robot for inspection, replaces the degraded Joint-3 component, calibrates the robot, and performs validation tests before resuming normal production.",
+  "risk_level": "HIGH",
+  "human_approval_required": true,
+  "generated_by": "gemini-robotics-er-2-preview",
+  "prompt_version": "v1"
+}

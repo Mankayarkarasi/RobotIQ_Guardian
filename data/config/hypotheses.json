@@ -1,0 +1,35 @@
+{
+  "hypotheses": [
+    {
+      "id": "H1",
+      "name": "Joint-3 Mechanical Degradation",
+      "description": "Possible mechanical degradation affecting Joint-3, supported by joint vibration, increased motor load, temperature rise, unstable motion, or observed task failure.",
+      "supporting_evidence": [
+        "joint_3_vibration",
+        "motor_current",
+        "temperature",
+        "unstable_motion",
+        "task_failure"
+      ]
+    },
+    {
+      "id": "H2",
+      "name": "Conveyor Instability",
+      "description": "Possible conveyor-side instability affecting robot cycle execution.",
+      "supporting_evidence": [
+        "cycle_time",
+        "conveyor_motion_abnormal"
+      ]
+    },
+    {
+      "id": "H3",
+      "name": "Fixture Misalignment",
+      "description": "Possible fixture or placement alignment issue affecting successful task completion.",
+      "supporting_evidence": [
+        "position_error",
+        "placement_deviation",
+        "task_failure"
+      ]
+    }
+  ]
+}

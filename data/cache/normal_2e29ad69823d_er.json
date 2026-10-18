@@ -1,0 +1,35 @@
+{
+  "operation_status": "NORMAL",
+  "motion_stability": "STABLE",
+  "task_completed": true,
+  "observations": [
+    {
+      "timestamp_seconds": 0.5,
+      "observation": "The robotic arm descends towards the conveyor belt to retrieve a component.",
+      "confidence": 0.95
+    },
+    {
+      "timestamp_seconds": 1.5,
+      "observation": "The arm's end-effector securely grips a small metallic component from the conveyor.",
+      "confidence": 0.95
+    },
+    {
+      "timestamp_seconds": 3.5,
+      "observation": "The arm moves along a smooth trajectory towards the block fixture on the right.",
+      "confidence": 0.95
+    },
+    {
+      "timestamp_seconds": 5.0,
+      "observation": "The gripper inserts the component into the designated slot on the fixture and releases it.",
+      "confidence": 0.95
+    },
+    {
+      "timestamp_seconds": 6.5,
+      "observation": "The robotic arm retracts to an elevated position, completing the operation.",
+      "confidence": 0.95
+    }
+  ],
+  "summary": "The robotic arm successfully executed a standard pick-and-place cycle, transporting a component from the conveyor line to a multi-cavity fixture with stable and controlled motion.",
+  "parse_status": "SUCCESS",
+  "generated_by": "gemini-robotics-er-2-preview"
+}

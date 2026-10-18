@@ -1,0 +1,7 @@
+{
+  "cycle_time_max": 45,
+  "position_error_max": 0.5,
+  "joint_3_vibration_max": 2.5,
+  "motor_current_max": 8.5,
+  "temperature_max": 75
+}

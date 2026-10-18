@@ -1,0 +1,4 @@
+# Additional optional dependencies for Step 41 ADK agents
+# Install into an isolated Python virtual environment.
+# Choose a Python/google-adk combination supported by the package resolver.
+google-adk>=2.11,<3

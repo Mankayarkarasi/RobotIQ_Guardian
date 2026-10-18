@@ -1,0 +1,42 @@
+[
+  {
+    "frame_id": 0,
+    "timestamp_seconds": 0.0,
+    "filename": "frame_0000_0.00s.jpg"
+  },
+  {
+    "frame_id": 1,
+    "timestamp_seconds": 1.0,
+    "filename": "frame_0001_1.00s.jpg"
+  },
+  {
+    "frame_id": 2,
+    "timestamp_seconds": 2.0,
+    "filename": "frame_0002_2.00s.jpg"
+  },
+  {
+    "frame_id": 3,
+    "timestamp_seconds": 3.0,
+    "filename": "frame_0003_3.00s.jpg"
+  },
+  {
+    "frame_id": 4,
+    "timestamp_seconds": 4.0,
+    "filename": "frame_0004_4.00s.jpg"
+  },
+  {
+    "frame_id": 5,
+    "timestamp_seconds": 5.0,
+    "filename": "frame_0005_5.00s.jpg"
+  },
+  {
+    "frame_id": 6,
+    "timestamp_seconds": 6.0,
+    "filename": "frame_0006_6.00s.jpg"
+  },
+  {
+    "frame_id": 7,
+    "timestamp_seconds": 7.0,
+    "filename": "frame_0007_7.00s.jpg"
+  }
+]

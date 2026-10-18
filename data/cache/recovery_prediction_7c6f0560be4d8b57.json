@@ -1,0 +1,21 @@
+{
+  "status": "PREDICTION_COMPLETED",
+  "recovery_success_score": 0.85,
+  "expected_post_recovery_state": "RECOVERED",
+  "residual_risk": "MEDIUM",
+  "risk_factors": [
+    "The component replacement step is specified as 'simulated', which implies the actual physical joint component might not be replaced, leaving the physical degradation unresolved.",
+    "Possible re-emergence of backlash or calibration drift if the replacement component or calibration is not secured properly.",
+    "Potential secondary damage to Joint-3 motor if operated before verifying thermal and current telemetry levels."
+  ],
+  "verification_requirements": [
+    "Verify that physical component replacement is performed if inspection confirms degradation.",
+    "Monitor telemetry for 'joint_3_vibration' to ensure it remains below the 2.5 threshold during the no-load validation test.",
+    "Ensure 'position_error' does not exceed 0.5 and 'motor_current' remains below 8.5 during the full-load validation cycle.",
+    "Confirm that the red warning light on the left panel is cleared and the robot successfully executes the pick-and-place task."
+  ],
+  "summary": "The recovery plan is highly structured and addresses the critical failure symptoms (high vibration, temperature, position error) through systematic inspection, calibration, and validation tests. However, the use of a 'simulated' component replacement introduces a medium risk unless physical hardware intervention is executed upon finding physical wear during inspection.",
+  "generated_by": "gemini-robotics-er-2-preview",
+  "prompt_version": "v1",
+  "score_type": "evidence_based_not_calibrated_probability"
+}

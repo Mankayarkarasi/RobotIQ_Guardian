@@ -1,0 +1,14 @@
+{
+  "allowed_actions": [
+    "Pause production cell",
+    "Move robot to safe inspection position",
+    "Inspect Joint-3",
+    "Inspect Joint-3 lubrication condition",
+    "Inspect Joint-3 for mechanical wear or backlash",
+    "Perform simulated Joint-3 maintenance",
+    "Perform simulated Joint-3 component replacement",
+    "Perform robot calibration",
+    "Run no-load Joint-3 validation test",
+    "Run validation cycle"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "scenario": "normal",
+  "cycle_time": 41,
+  "position_error": 0.3,
+  "joint_3_vibration": 2.0,
+  "motor_current": 7.9,
+  "temperature": 61
+}

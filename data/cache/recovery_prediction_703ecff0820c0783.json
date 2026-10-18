@@ -1,0 +1,18 @@
+{
+  "status": "PREDICTION_COMPLETED",
+  "recovery_success_score": 0.15,
+  "expected_post_recovery_state": "The robot remains physically degraded with a high likelihood of persistent or immediate recurrent failures, as the mechanical degradation in Joint-3 has not been physically resolved.",
+  "residual_risk": "HIGH",
+  "risk_factors": [
+    "The recovery plan proposes a 'simulated' component replacement rather than an actual physical replacement, leaving the degraded mechanical gear/motor in service.",
+    "High vibration, position errors, and overheating will persist under operating load, likely leading to continued pick-and-place failures and potential further hardware damage."
+  ],
+  "verification_requirements": [
+    "Modify the plan to execute a physical (not simulated) replacement of the degraded Joint-3 component.",
+    "Ensure telemetric monitoring of joint vibration, motor current, and position error during a loaded validation cycle to confirm they have returned to baseline thresholds."
+  ],
+  "summary": "The recovery plan cannot restore normal operation because it includes only a simulated component replacement for a real, physically degraded Joint-3 mechanical issue. Without actual physical intervention, the root cause remains unaddressed.",
+  "generated_by": "gemini-robotics-er-2-preview",
+  "prompt_version": "v1",
+  "score_type": "evidence_based_not_calibrated_probability"
+}

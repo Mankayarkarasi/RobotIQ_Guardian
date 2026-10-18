@@ -1,0 +1,30 @@
+{
+  "operation_status": "ABNORMAL",
+  "motion_stability": "STABLE",
+  "task_completed": false,
+  "observations": [
+    {
+      "timestamp_seconds": 0.5,
+      "observation": "The robotic arm moves from the left side towards the conveyor belt.",
+      "confidence": 0.9
+    },
+    {
+      "timestamp_seconds": 2.5,
+      "observation": "The arm positions its gripper directly above a metal part on the conveyor.",
+      "confidence": 0.9
+    },
+    {
+      "timestamp_seconds": 4.5,
+      "observation": "The arm descends and the gripper attempts to grasp the metal part.",
+      "confidence": 0.9
+    },
+    {
+      "timestamp_seconds": 6.0,
+      "observation": "The arm retracts upwards with an empty gripper, failing to pick up the part, and a red warning light on the left panel begins to flash.",
+      "confidence": 0.95
+    }
+  ],
+  "summary": "The robotic arm executes a smooth and stable trajectory to pick up a metal part from the conveyor belt. However, the gripper fails to secure the part, and the arm retracts empty, triggering a red warning light on the control panel.",
+  "parse_status": "SUCCESS",
+  "generated_by": "gemini-robotics-er-2-preview"
+}
