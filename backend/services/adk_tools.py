@@ -62,7 +62,7 @@ def _load_incident_or_fallback(incident_id: str) -> Dict[str, Any]:
     er_res = analyze_video(str(vid_path), use_cache=True, cache_only=True)
     evidence = build_evidence(tel_res, er_res)
     hypos = get_hypotheses()
-    scored = score_hypotheses(hypos, evidence)
+    scored = score_hypotheses(evidence, hypos)
     root_cause = select_root_cause(scored)
     rec_plan = generate_recovery_plan(root_cause, evidence)
     rec_pred = predict_recovery_success(root_cause, evidence, rec_plan, use_cache=True, cache_only=True)
