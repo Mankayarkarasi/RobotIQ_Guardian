@@ -128,7 +128,7 @@ from backend.services.adk_tools import (
 # =========================================================
 
 app = FastAPI(
-    title="RoboIQ Guardian API",
+    title="RobotIQ Guardian API",
     version="1.0.0",
     description=(
         "Autonomous Embodied Manufacturing Failure "

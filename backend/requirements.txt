@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+-r adk-requirements.txt
+google-genai
+python-dotenv
+httpx
